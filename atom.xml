@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mrwater2022.github.io</id>
+    <id>https://liliwater.github.io</id>
     <title>慢热白开水</title>
-    <updated>2022-02-17T06:06:10.993Z</updated>
+    <updated>2022-02-17T07:40:26.312Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://mrwater2022.github.io"/>
-    <link rel="self" href="https://mrwater2022.github.io/atom.xml"/>
+    <link rel="alternate" href="https://liliwater.github.io"/>
+    <link rel="self" href="https://liliwater.github.io/atom.xml"/>
     <subtitle>慢热白开水，速溶黑咖啡</subtitle>
-    <logo>https://mrwater2022.github.io/images/avatar.png</logo>
-    <icon>https://mrwater2022.github.io/favicon.ico</icon>
+    <logo>https://liliwater.github.io/images/avatar.png</logo>
+    <icon>https://liliwater.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 慢热白开水</rights>
     <entry>
+        <title type="html"><![CDATA[关于此网站的重建工作]]></title>
+        <id>https://liliwater.github.io/post/guan-yu-ci-wang-zhan-de-chong-jian-gong-zuo/</id>
+        <link href="https://liliwater.github.io/post/guan-yu-ci-wang-zhan-de-chong-jian-gong-zuo/">
+        </link>
+        <updated>2022-02-17T07:36:25.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[常用网站]]></title>
+        <id>https://liliwater.github.io/post/chang-yong-wang-zhan/</id>
+        <link href="https://liliwater.github.io/post/chang-yong-wang-zhan/">
+        </link>
+        <updated>2022-02-17T07:00:31.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hello World！]]></title>
-        <id>https://mrwater2022.github.io/post/hello-gridea/</id>
-        <link href="https://mrwater2022.github.io/post/hello-gridea/">
+        <id>https://liliwater.github.io/post/hello-gridea/</id>
+        <link href="https://liliwater.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
     </entry>
