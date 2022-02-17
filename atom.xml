@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https:// MRwater2022.github.io</id>
+    <id>https://mrwater2022.github.io</id>
     <title>慢热白开水</title>
-    <updated>2022-02-17T03:55:23.358Z</updated>
+    <updated>2022-02-17T03:59:24.570Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https:// MRwater2022.github.io"/>
-    <link rel="self" href="https:// MRwater2022.github.io/atom.xml"/>
+    <link rel="alternate" href="https://mrwater2022.github.io"/>
+    <link rel="self" href="https://mrwater2022.github.io/atom.xml"/>
     <subtitle>慢热白开水，速溶黑咖啡</subtitle>
-    <logo>https:// MRwater2022.github.io/images/avatar.png</logo>
-    <icon>https:// MRwater2022.github.io/favicon.ico</icon>
+    <logo>https://mrwater2022.github.io/images/avatar.png</logo>
+    <icon>https://mrwater2022.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 慢热白开水</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https:// MRwater2022.github.io/post/hello-gridea/</id>
-        <link href="https:// MRwater2022.github.io/post/hello-gridea/">
+        <title type="html"><![CDATA[Hello World！]]></title>
+        <id>https://mrwater2022.github.io/post/hello-gridea/</id>
+        <link href="https://mrwater2022.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></content>
     </entry>
 </feed>
