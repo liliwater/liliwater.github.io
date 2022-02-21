@@ -1,201 +1,23 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="【视频】
-Panzoid—开场视频制作（纯英文，建议搭配翻译插件）
-https://panzoid.com/
-茶杯狐—良心影视资源，界面整洁，支持下载
-https://www.cupfox.com/
-33台词—凭借一句台词就能找到出处或包含..." />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://liliwater.github.io/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://liliwater.github.io/styles/main.css">
-    <!-- 代码渲染风格css -->
-    
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
-    
-    <!-- 代码高亮插件 -->
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-    <!-- 代码复制插件 -->
-    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
-    <!-- live2d插件 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-    <!-- 数学公式 -->
-    
-    <title>常用网站</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://liliwater.github.io/media/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+<link rel="stylesheet" href="https://liliwater.github.io/styles/main.css">
+<link rel="stylesheet" href="https://liliwater.github.io/media/css/font-awesome.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<title>慢热白开水</title>
 
-    <!-- 大纲索引css调整 -->
-    
-    <style>
-        .markdownIt-TOC {
-            margin-left: 28%;
-            padding-left: 2px;
-            width: 80%;
-        }
-
-        .markdownIt-TOC li {
-            padding-left: 8%;
-        }
-    </style>
-    
-</head>
 
 <body>
-    <div id="landlord">
-        <div class="message" style="opacity:0"></div>
-        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
-    </div>
-    <div id="domainname" style="display:none">https://liliwater.github.io</div>
+
     <div id="content">
-        <div>
-            <!----------- 移动端导航栏👇 ----------------->
-            <div id="bar">
-                <head>
-  <!-- 引入Bootstrap核心样式文件 -->
-  <link rel="stylesheet" href="https://liliwater.github.io/media/css/bootstrap.min.css">
-</head>
-<style>
-  .navmobile {
-    z-index: 15;
-    max-height: 40vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-
-  @media screen and (max-width: 1200px) {
-    .navbar {
-      max-width: 100vw;
-    }
-  }
-
-  @media screen and (max-width:1200px) and (min-width: 768px) {
-    @media (min-width: 768px) {
-      .navbar-nav {
-        float: right;
-        margin: 0;
-      }
-    }
-  }
-
-  @media screen and (max-width:768px) {
-    .mbapspan {
-      padding: 0;
-    }
-  }
-</style>
-<div class="pjaxloading"  onclick="pjaxloadingClose()">
-  <div class="loadingbackground"></div>
-  <div id="loading">
-    <div class="loading">
-    </div>
-  </div>
-</div>
-<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
-        aria-expanded="false" id="barbutton">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a data-pjax class="navbar-brand" href="https://liliwater.github.io">慢热白开水&nbsp;&nbsp;|</a>
-      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
-          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="barmenu">
-      <ul class="nav navbar-nav">
-        
-        
-        <li>
-          <a data-pjax href="/">
-            首页
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/archives">
-            归档
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/tags">
-            标签
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/post/about">
-            关于
-          </a>
-        </li>
-        
-        
-        
-        <li><a data-pjax href="https://liliwater.github.io/talk">说说</a></li>
-        
-        
-          <li><a data-pjax href="https://liliwater.github.io/bber">哔哔</a></li>
-          
-          
-        <li><a data-pjax href="https://liliwater.github.io/friends">友链</a></li>
-
-        
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-
-  <!-- 引入jQuery核心js文件 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-  <script>
-    let btstate = false;
-    var bt = $("#barbutton");
-    var bm = $("#barmenu");
-    bt.click(function () {
-      dropdown();
-    })
-    function dropdown() {
-      console.log(btstate);
-      //下拉
-      if (btstate == false) {
-        bt.removeClass("collapsed");
-        bt.attr("aria-expanded", "true");
-        bm.attr("aria-expanded", "true")
-        bm.fadeIn(700);
-        btstate = true;
-      }
-      else {
-        bt.addClass("collapsed");
-        bt.attr("aria-expanded", "false");
-        bm.removeClass("in");
-        bm.hide();
-        bm.attr("aria-expanded", "false");
-        btstate = false;
-      }
-    }
-  </script> 
-            </div>
-            <!----------- 移动端导航栏👆 ----------------->
-
-            <!--------------- pc端菜单栏👇 ---------------->
-            <div class="side"><head>
+        <div class="nav-large">
+            <div class="row">
+                <!--------------- pc端菜单栏👇 ---------------->
+                <div class="side"><head>
     <link rel="stylesheet" href="https://liliwater.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://liliwater.github.io/styles/main.css">
     
@@ -1040,283 +862,355 @@ menulist.eq(i).show();
 
 
 </div>
-            <!--------------- pc端菜单栏👆 ---------------->
+                <!--------------- pc端菜单栏👆 ---------------->
 
-            <!-- ----------------左侧菜单栏html 👇-------------------------------------->
-            
-            <div>
-                <div id="tab1" class="tab">
-                    <div class="bars">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="close"></div>
-                </div>
-                <div class="col-md-1 col-lg-3"></div>
-                <!-- main标签，pjax渲染时加载以下内容👇 -->
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="padding:0;">
-                    <link rel="stylesheet" href="https://liliwater.github.io/media/css/font-awesome.css">
+                <!----------- 移动端导航栏👇 ----------------->
+                <div class="tbar"> <head>
+  <!-- 引入Bootstrap核心样式文件 -->
+  <link rel="stylesheet" href="https://liliwater.github.io/media/css/bootstrap.min.css">
+</head>
+<style>
+  .navmobile {
+    z-index: 15;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
-<body>
-    <div class="allcontent" id="postdetail">
-        <div class="postshow postpadding" style="padding-bottom: 0;">
-            
-            <div class="postdetailimg">
-                <img src="https://liliwater.github.io/post-images/chang-yong-wang-zhan.jpg" class="postimage" style="cursor:auto">
-            </div>
-            <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2022-02-17</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 6 min read</div>
-                <div class="posttag">
-                    
-                </div>
-            </div>
-            
-        <div id="articlecontent">
-            <div id="texttitle" style="text-align: center">
-                <h2 id="ptitle">常用网站</h2>
-                <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://liliwater.github.io/post/chang-yong-wang-zhan/</div>
-                <div id="rootaddr" style="display:none">https://liliwater.github.io</div>
-                
-            </div>
-            <div class="text ">
-                <p>【视频】<br>
-Panzoid—开场视频制作（纯英文，建议搭配翻译插件）<br>
-https://panzoid.com/</p>
-<p>茶杯狐—良心影视资源，界面整洁，支持下载<br>
-https://www.cupfox.com/</p>
-<p>33台词—凭借一句台词就能找到出处或包含这句台词的电影片段，并且支持在线剪辑下载<br>
-http://33.agilestudio.cn/</p>
-<p>HotBox—只要有视频链接即可下载视频，并且提供多种分辨率和格式（英文网站）<br>
-https://www.hotbox.fun/</p>
-<p>【图片】<br>
-Pixabay—但凡能找到的图片都是无版权可商用，并且都是高清无码，既能搜索查找还能分类查询（中文网站）<br>
-https://pixabay.com/</p>
-<p>Remove.bg—自动进行抠图，还可以在线更换背景（中文网站）<br>
-https://www.remove.bg/</p>
-<p>pixiv—纸片人老婆交流平台，好画师真的多（外网，搭配梯子使用）<br>
-http://www.pixiv.net/</p>
-<p>故障效果生成器—给图片添加故障效果，支持jpg，png，gif，MP4格式下载<br>
-https://photomosh.com/</p>
-<p>炫光画生成器—自己搞些配图还是挺不错的<br>
-http://weavesilk.com/</p>
-<p>Wallhaven—壁纸网站，83万份高清壁纸收录，且下载无任何限制<br>
-https://wallhaven.cc</p>
-<p>Unsplash—图片素材网站，全部素材免费下载可商用<br>
-https://unsplash.com</p>
-<p>Videvo—国外专门提供音视频资源的网站，空视频资源丰富，质量高，4K级比比皆是<br>
-https://www.videvo.net</p>
-<p>Pexels—国外老牌图库，图视频免版权<br>
-https://www.pexels.com/zh-cn</p>
-<p>【音频】<br>
-Moises—人工智能分离音乐音轨，简单来说，你可以用它分离人声和伴奏，懂？<br>
-https://moises.ai/</p>
-<p>小森平的免费下载音效——也是个人网站，算是友情链接了，网站提供的所有音效都是小森平一人制作，免费下载，甚至可以直接商用，ppt再也不愁没音效了<br>
-https://taira-komori.jpn.org/freesoundcn.html</p>
-<p>淘声网—能在全网搜索音效资源的网站，可以使用网站提供工具或到源网站进行下载<br>
-https://www.tosound.com/</p>
-<p>乐器模拟器—体验电子音乐的制作，提供多种音轨，并且支持下载及混编<br>
-https://learningmusic.ableton.com/</p>
-<p>【字体】<br>
-360查字体—查询字体是否可以进行商用<br>
-http://fonts.safe.360.cn/</p>
-<p>100Font—上百款可商用字体，支持一键打包下载还有安装指引，小白也能用<br>
-https://www.100font.com/</p>
-<p>【设计用】</p>
-<p>码力全开—产品/设计师/独立开发者的资源库。素材，工具，不论是啥，这里收录的资源质量非常高<br>
-https://design.maliquankai.com</p>
-<p>SeeSeed—同样的设计网站，有设计问题直接点开，别犹豫<br>
-https://www.seeseed.com</p>
-<p>【小工具】<br>
-Aconvert—完全免费不限次数的多功能文件格式转换网站，有它还要啥格式工厂<br>
-https://www.aconvert.com/cn/</p>
-<p>BIGjepg—AI人工智能图片放大，不用怕图片糊得没法用<br>
-https://bigjpg.com/</p>
-<p>佛跳墙—很良心的梯子，不付费也能用，网速中等，自己知道就行<br>
-https://www.qingfengshenzhen.com/cn/?a=gi9cp#three</p>
-<p>SimilarSites—专门处理一些网站打不开暴毙的情况，用源网站的域名搜索类似网站，而且这货不仅有网页版，还提供了浏览器插件版。。。<br>
-https://cn.similarsites.com/</p>
-<p>致美化—桌面美化，壁纸主题光标<br>
-https://zhutix.com/</p>
-<p>书签地球—这是一个可以让你看到其他网友上传的浏览器收藏夹的网站，资源共享，还能下载后上传到自己的浏览器里<br>
-https://www.bookmarkearth.com/</p>
-<p>千亿像素看中国—46个国内城市，景点，26个国外景点，上帝视角观看现实地球<br>
-http://www.bigpixel.cn/</p>
-<p>AirPano—足不出户看世界各地风景名胜360全景图<br>
-https://www.airpano.org.cn</p>
-<p>Skyline Webcams—收录全球范围内的公开实况摄像头，实时观看各地风景<br>
-https://www.skylinewebcams.com/</p>
-<p>小鸡词典—查各种新梗新流行语，确保自己不被时代抛弃<br>
-https://jikipedia.com/</p>
-<p>ES6入门—有兴趣可以看看，专业技术<br>
-https://es6.ruanyifeng.com/</p>
-<p>LaTeX公式编辑器—可以快捷简便打任何公式的工具，B站妈咪叔做的<br>
-https://www.latexlive.com/##</p>
-<p>Heavens-Above——超硬核航天天文网站，这个可以用来看ISS和中国空间站实时位置，甚至可以知道什么时候肉眼可以看到空间站飞过你上空<br>
-www.heavens-above.com</p>
-<p>果汁，一个整合资源足够全的网站，放任自己的好奇心去看一下，然后回来感谢我<br>
-http://guozhivip.com/rank/</p>
-<p>全历史—一个非常全的历史网站，历史爱好者必看<br>
-www.allhistory.com</p>
-<p>我知道你在下载啥——超硬核的网站，可以知道当前wifi下，所有用户通过该IP下载的东西，然后你就会发现一些意想不到的东西，而且你也可以拿到该链接进行下载<br>
-https://iknowwhatyoudownload.com/</p>
-<p>MIKU解压网站 https://aidn.jp/mikutap/</p>
-<p>虫部落—集成了上百个搜索引擎的导航网站，各种需求，一站解决<br>
-https://search.chongbuluo.com</p>
-<p>科塔学术—质量极高的学术导航网站，学术资料找它绝对没问题<br>
-https://site.sciping.com</p>
-<p>书享家—全网能白嫖电子书的站点几乎都有，书友福利<br>
-http://shuxiangjia.cn</p>
-<p>HIPPTER—PPT模板聚合网站，随便一个都是惊喜，分类明确，数量充足，直接下载，没有任何套路<br>
-https://www.hippter.com</p>
-<p>第一教程网—从学前到考研，包括四六级证书，各类职业技能都有，并且完全免费，没有任何广告，这才是学习资料啊喂<br>
-https://www.diyijc.com</p>
-<p>北大教材—收录了北大出版的各种教材的电子书，清晰度直接拉满<br>
-https://pup6.yunzhan365.com/bookcase/jmyr/index.html</p>
-<p>考试酷—可以体验各种模拟考试，172万套试卷，188万套试题，还怕没卷子做？<br>
-https://www.examcoo.com/index/ku</p>
-<p>千米游戏—童年经典游戏，加载速度快，色彩艳丽，还有自带金手指，宝藏网站<br>
-https://www.yikm.net</p>
-<p>UPanSo—没有套路的优质网盘资源搜索神器<br>
-https://upanso.com</p>
-<p>∕￣￣￣￣￣￣￣￣￣￣￣￣<br>
-︳ 这文章真他娘的有趣 ︱<br>
-\＿＿＿＿＿＿＿＿＿＿＿＿/<br>
-〇<br>
-○</p>
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      max-width: 100vw;
+    }
+  }
 
-            </div>
-            <hr style="width: 80%;">
-            
-            <div class="postfooter">
-                <ul class="post-copyright">
-                    <li><strong>文章作者：</strong>慢热白开水</li>
-            <li><strong>原文链接：</strong>https://liliwater.github.io/post/chang-yong-wang-zhan/</li>
-            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
-                许可协议。转载请注明出处！</li>
-            </ul>
-        </div>
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .mbapspan {
+      padding: 0;
+    }
+  }
+</style>
+<div class="pjaxloading"  onclick="pjaxloadingClose()">
+  <div class="loadingbackground"></div>
+  <div id="loading">
+    <div class="loading">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+        aria-expanded="false" id="barbutton">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-pjax class="navbar-brand" href="https://liliwater.github.io">慢热白开水&nbsp;&nbsp;|</a>
+      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="barmenu">
+      <ul class="nav navbar-nav">
         
-            <div class="shareContainer">
-                <div class="share" style="height:30px;background: white;">
-                    <a class="qq" href=""><i><img class="shareicon"
-                                src="https://liliwater.github.io/media/images/qqs.png" alt=""></i></a>
-                    <a class="wechat" href=""><i><img class="shareicon"
-                                src="https://liliwater.github.io/media/images/wechats.png" alt=""></i></a>
-                    <a class="weibo" href=""><i><img class="shareicon"
-                                src="https://liliwater.github.io/media/images/weibos.png" alt=""></i></a>
-                    <a class="qzone" href=""><i><img class="shareicon"
-                                src="https://liliwater.github.io/media/images/qzones.png" alt=""></i></a>
-                    <a class="douban" href=""><i><img class="shareicon"
-                                src="https://liliwater.github.io/media/images/doubans.png" alt=""></i></a>
-                    <a class="facebook" href=""><i><img class="shareicon"
-                                src="https://liliwater.github.io/media/images/facebooks.png" alt=""></i></a>
-                    <a class="twitter" href=""><i><img class="shareicon"
-                                src="https://liliwater.github.io/media/images/twitter.png" alt=""></i></a>
-                </div>
-            </div>
-            
-        <div id="otherpost">
-            
-            <a  data-pjax class="prev-post-pc" href="https://liliwater.github.io/post/guan-yu-ci-wang-zhan-de-chong-jian-gong-zuo/"  style="color: black;">
-                <div id="ppcontainer">
-                    
-                    <img src="https://liliwater.github.io/post-images/guan-yu-ci-wang-zhan-de-chong-jian-gong-zuo.jpg" style="width: 100%;" class="opimg">
-                    
-                    <h4 class="optitle">关于此网站的重建工作</h4>
-                </div>
-            </a>
-            <div class="prev-post">
-                上一篇 <a  data-pjax href="https://liliwater.github.io/post/guan-yu-ci-wang-zhan-de-chong-jian-gong-zuo/">关于此网站的重建工作</a>
-            </div>
-            
-            
-            <a data-pjax class="next-post-pc" href="https://liliwater.github.io/post/hello-gridea/"  style="color: black;">
-                <div id="npcontainer">
-                    
-                    <img src="https://liliwater.github.io/post-images/hello-gridea.jpg" style="width: 100%;" class="opimg">
-                    
-                    <h4 class="optitle">Hello World！</h4>
-                </div>
-            </a>
-            <div class="next-post">
-                下一篇 <a  data-pjax href="https://liliwater.github.io/post/hello-gridea/">Hello World！</a>
-            </div>
-            
-        </div>
-    </div>
-    </div>
-    </div>
-    <!-- 弹窗 -->
-    <div id="myModal" class="modal">
-        <img class="modal-content" id="img01">
-    </div>
-</body>
-<script>
-    //文章阅读热度
-    var pl = $("#pl").html();
-    var rootaddr = $("#rootaddr").html();
-    pl = pl.replace(rootaddr, "");
-    $("#hotnum").attr('id', pl);
-</script>
-                    <div class="toc-container">
-                        
+        
+        <li>
+          <a data-pjax href="/">
+            首页
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/archives">
+            归档
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tags">
+            标签
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/post/about">
+            关于
+          </a>
+        </li>
+        
+        
+        
+        <li><a data-pjax href="https://liliwater.github.io/talk">说说</a></li>
+        
+        
+          <li><a data-pjax href="https://liliwater.github.io/bber">哔哔</a></li>
+          
+          
+        <li><a data-pjax href="https://liliwater.github.io/friends">友链</a></li>
+
+        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    let btstate = false;
+    var bt = $("#barbutton");
+    var bm = $("#barmenu");
+    bt.click(function () {
+      dropdown();
+    })
+    function dropdown() {
+      console.log(btstate);
+      //下拉
+      if (btstate == false) {
+        bt.removeClass("collapsed");
+        bt.attr("aria-expanded", "true");
+        bm.attr("aria-expanded", "true")
+        bm.fadeIn(700);
+        btstate = true;
+      }
+      else {
+        bt.addClass("collapsed");
+        bt.attr("aria-expanded", "false");
+        bm.removeClass("in");
+        bm.hide();
+        bm.attr("aria-expanded", "false");
+        btstate = false;
+      }
+    }
+  </script> </div>
+                <!----------- 移动端导航栏👆 ----------------->
+
+                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+                
+                <div>
+                    <div id="tab1" class="tab">
+                        <div class="bars">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="close"></div>
                     </div>
-                    <div class="tog">
-                        <div class="toggleContainer">
-                            <div class="toggle">
-                                <i class="fas fa-angle-double-up"></i>
+                    <div class="col-lg-3"></div>
+                        <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                            <link rel="stylesheet" href="https://liliwater.github.io/media/css/font-awesome.css">
+
+    <div style="display: none;">
+        
+            
+                
+                    <span name="plfeature">\media\images\custom-postdefaultimage.jpg</span>
+                    
+                
+            <span name="pltitle">《打上花火》-DAOKO、米津玄师合唱版</span>
+            <span name="pllink">https://liliwater.github.io/post/lesslessda-shang-hua-huo-greatergreater-daokomi-jin-xuan-shi-he-chang-ban/</span>
+            <span name="pldate">2022-02-19</span>
+            <span name="plstats">1 min read</span>
+            
+                <span name="pltag" alt="《打上花火》-DAOKO、米津玄师合唱版">打上花火</span>
+                <span name="pltaglink" alt="《打上花火》-DAOKO、米津玄师合唱版">https://liliwater.github.io/tag/xNgC9yIHd/</span>
+            
+                <span name="pltag" alt="《打上花火》-DAOKO、米津玄师合唱版">DAOKO</span>
+                <span name="pltaglink" alt="《打上花火》-DAOKO、米津玄师合唱版">https://liliwater.github.io/tag/jwQXyi5Fcb/</span>
+            
+                <span name="pltag" alt="《打上花火》-DAOKO、米津玄师合唱版">米津玄师</span>
+                <span name="pltaglink" alt="《打上花火》-DAOKO、米津玄师合唱版">https://liliwater.github.io/tag/FPNkw-dI5G/</span>
+            
+        
+    </div>
+
+    
+    <div id="post-container" class="eleg-allpostscontainer">
+        <div v-for="post in postinfo" class="eleg-posts">
+            <div v-if="post.elegcontainer=='eleg-postcontainer-left'">
+                    <div :class="post.elegcontainer">
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                        
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
                             </div>
                         </div>
                     </div>
-                    <!---------------------------- 评论系统👇 ------------------------->
-                    <div id="comment" class="comment">
-                        <div class="commentcontainer">
-                            
-                                
-                                    
-                                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'e114621374e44f06364b',
-    clientSecret: '9f53d910b961b14b36fdf091c24a09629a16168c',
-    repo: 'liliwater.github.io',
-    owner: 'liliwater',
-    admin: ['liliwater'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-                                    
-                                    
-                                
-                            
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <!---------------------------- 评论系统👆 ------------------------->
-                </div>
-                <!-- main标签，pjax渲染时加载以上内容👆 -->
-                <div class="col-md-1 col-lg-2"></div>
-                <div id="bg">
-                </div>
             </div>
-            <!-- ----------------左侧菜单栏html 👆-------------------------------------->
-            
+            <div v-else>
+                    <div :class="post.elegcontainer">
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
+                        
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                    </div>
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
-        <!-- aplayer播放器加载👇 -->
+    </div>
+
+    
+    <script>
+    var app2 = new Vue({
+      el: '#post-container',
+      mounted:function(){
+        this.getpostInfo();
+      },
+      methods:{
+         getpostInfo:function(){
+             var plflist = $("span[name='plfeature']");
+             var pltlist = $("span[name='pltitle']");
+             var plllist = $("span[name='pllink']");
+             var pldlist = $("span[name='pldate']");
+             var plslist = $("span[name='plstats']");
+             var pltaglist = $("span[name='pltag']");
+             for(var i=0;i<this.pagesize&&i<plflist.length;i++){
+                 var d = {};
+                 var tags = []
+                 d["feature"] = plflist.eq(i).html();
+                 d["title"] = pltlist.eq(i).html();
+                 d["link"] = plllist.eq(i).html();
+                 d["date"] = pldlist.eq(i).html();
+                 d['stats'] = plslist.eq(i).html();
+                 for(var j=0;j<pltaglist.length;j++){
+                     if(pltaglist.eq(j).attr('alt')==d['title'])
+                        tags.push(pltaglist.eq(j).html())
+                 }
+                 d["tags"] = tags;
+                 if(i%2==0)
+                 {
+                     d['elegcontainer'] = 'eleg-postcontainer-left';
+                     d['imgclass'] = 'eleg-img-left'
+                 }
+                 else{
+                    d['elegcontainer'] = 'eleg-postcontainer-right';
+                    d['imgclass'] = 'eleg-img-right' 
+                 }
+                 this.postinfo.push(d);
+             }
+         }
+      },
+      data: {
+        pagesize: "10",
+        postinfo:[],
+      }
+    })
+    </script>
+
+                            <div>
+                                <div class="pcpagi">
+    <div class="pagi">
+        <ul>
             
-            <head>
+            <li><a style="width:100px">&nbsp;</a></li>
+            
+                    <li><a id="page1">1</a></li>
+                    <li><a id="page2" class="active">2</a></li>
+                    <li><a id="page3">3</a></li>
+                    
+            <li><a style="width:100px">&nbsp;</a></li>
+            
+                </ul>
+    </div>
+</div>
+
+<div id="pagination-prev" style="display:none"> 
+</div>
+<div id="pagination-next" style="display:none"> </div>
+
+<div class="pagination-container">
+      
+    
+</div>
+
+<script>
+    var prevstr = document.getElementById("pagination-prev").innerHTML;
+    var nextstr = document.getElementById("pagination-next").innerHTML;
+    var page1 = document.getElementById("page1");
+    var page2 = document.getElementById("page2");
+    var page3 = document.getElementById("page3");
+    page1.innerHTML = '-';
+    page2.innerHTML = '1';
+    page3.innerHTML = '-';
+    if (prevstr.length > 5) {
+        if (prevstr.indexOf("page/") != -1) {
+            var prevnum = parseInt(prevstr.split("page/")[1]);
+            page1.innerHTML = prevnum;
+            page2.innerHTML = prevnum + 1;
+        } else {
+            page1.innerHTML = 1;
+            page2.innerHTML = 2;
+        }
+    }
+    if (nextstr.indexOf("page/") != -1) {
+        var nextnum = parseInt(nextstr.split("page/")[1]);
+        page3.innerHTML = nextnum;
+        page2.innerHTML = nextnum - 1;
+    }
+</script>
+                                <div style="padding-bottom:10%"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                </div>
+                <!-- ----------------左侧菜单栏html 👆-------------------------------------->
+                
+                <!------------------ 顶部菜单栏html👇--------->
+                
+                <!------------------ 顶部菜单栏html👆--------->
+            </div>
+            
+                        <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 </head>
 
@@ -1379,38 +1273,29 @@ https://upanso.com</p>
     }
 </script>
             
-        <!-- aplayer播放器加载👆 -->
-    </div>
-    
+        </div>
+        <div id="bg">
+        </div>
+        <!------- 背景图加载方式👇----- -->
+        <div id="bgchoice" style="display: none">default
+                    </div>
+                    
+                    <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
+                       
+        </div>
+        <!------- 背景图加载方式👆 --------------->
+</div>
+</div>
 
-    <!-- 背景图加载方式👇 -->
-    <div id="bgchoice" style="display: none">default
+        <div id="landlord">
+            <div class="message" style="opacity:0"></div>
+            <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+        </div>
+        <div id="domainname" style="display:none">https://liliwater.github.io
                 </div>
-                
-                <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
-                
-    <!-- 背景图加载方式👆 -->
 </body>
-
-<script>
-    //初始化
-    //更换twikoo头像
-    setTimeout(replaceAvatar,1000);
-    setTimeout(replaceAvatar,2000);
-    setTimeout(replaceAvatar,8000);
-    // --------为每张图片添加懒加载（lazyload）标签-->懒加载功能 👇------------
-    lazyload();
-    //为文章内所有代码块添加代码复制功能 👇
-    codeinit();
-    // ------代码高亮显示功能-------------
-    hljs.initHighlightingOnLoad();
-    if (shareChoice)
-        shareInit();
-    if (donateChoice)
-        donateInit();
-</script>
-
-<!------------------ 加载live2d模型功能（看板娘）👇 ---------------->
+</html>
+<!-------------------- live2d功能👇 --------------------------->
 
 <script type="text/javascript">
     var message_Path = '/live2d/'
@@ -1422,29 +1307,7 @@ https://upanso.com</p>
     loadlive2d("live2d", "https://liliwater.github.io/media/live2d/assets/tororo.model.json");
 </script>
 
-<!------------------ 加载live2d模型功能（看板娘）👆 ---------------->
-
-
-<!----------------------- 返回顶部按钮功能👇 --------------------->
-<script>
-    $(function () {
-        $('.toggleContainer').click(function () {
-            $('html,body').animate({
-                scrollTop: '0px'
-            }, 800);
-        });
-        $(window).scroll(function () {
-            var st = $(window).scrollTop();
-            if (st > 30) {
-                $(".toggleContainer").fadeIn(400);
-            } else {
-                $(".toggleContainer").fadeOut(100);
-            }
-        });
-    });
-</script>
-<!----------------------- 返回顶部按钮功能👆 --------------------->
-
+<!-------------------- live2d功能👆--------------------------->
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
@@ -1466,28 +1329,4 @@ https://upanso.com</p>
 <!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 
 
-
-
 <script src="https://liliwater.github.io/media/js/index.js"></script>
-
-
-<script>
-    //加载后的事件同步（阅读量、移动端评论等
-    window.onload = function () {
-    //代码块高亮渲染
-    document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-    });
-        getHotnum();
-        var sharepc = $(".share").eq(0).html();
-        $(".share").eq(1).html(sharepc);   //插件只会寻找一个分享标签渲染，所以需要手动添加到移动端
-        aplayerbtnInit();
-        $(".hljs").css({
-            "padding": "20px"
-        })
-    }
-</script>
-
-<!-- <script src="https://liliwater.github.io/media/js/av-min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
